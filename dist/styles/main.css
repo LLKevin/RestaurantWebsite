@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  background-color: blanchedalmond;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+/*Hero Styling*/
+
+#hero {
+  background-image: url('../../src/img/fruit-pastery.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+#hero ul {
+  justify-content: space-around;
+  display: flex;
+  margin: 2vh 0;
+}
+
+#hero a {
+  color: lightskyblue;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px black;
+  text-decoration: none;
+  transition: ease-in-out 450ms;
+}
+
+#hero-content {
+  background: linear-gradient(to left, rgba(8, 8, 8, .2), rgba(8, 8, 8, 0.2) 70.71%);
+  padding: 10px;
+}
+
+#hero-content a:hover {
+  border-bottom: 3px solid #6CA4C8;
+  color: #6CA4C8;
+  padding-bottom: 5px;
+}
+
+#hero-content #restaurant-title {
+  color: lightskyblue;
+  font-size: 1.7rem;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 3px;
+  padding: 5px;
+  margin-top: 1vh;
+  text-shadow: 1px 1px black;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/*Menu Styling */
+#menu-wrapper {
+  background-color: rgb(244, 213, 166);
+  border: 3px solid rgba(245, 205, 145, 0.671);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 80%;
+  justify-content: center;
+  padding: calc(2rem + 2vh);
+  margin: 5rem auto;
+  width: 80%;
+}
+
+.menu-item-wrapper {
+  align-self: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1vw 0;
+  text-align: center;
+  width: 100%;
+}
+
+#menu-wrapper H1 {
+  align-self: center;
+  font-family: 'Dancing Script', cursive;
+  margin: 3vh;
+  text-align: center;
+  width: 50%;
+}
+
+#menu-wrapper H1:after {
+  border-bottom: 2px dotted black;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  width: 50%;
+}
+
+.menu-item-wrapper img {
+  border-radius: 10px;
+  padding: 1vh;
+  width: 50%;
+}
+
+.menu-item-wrapper p {
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 1vh;
+}
+
+.menu-item-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  width: 50%;
+
+}
+
+/*contact styling */
+.contact-section {
+  align-items: center;
+  border: 1px solid salmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: calc(2rem + 2vh);
+  margin: 5rem auto;
+  width: 60%;
+}
+
+.contact-section h1 {
+  padding: 2vh;
+  margin: 2vh;
+}
+
+.contact-section form {
+  background-color: rgb(244, 213, 166);
+  border: 2px solid rgba(245, 205, 145, 0.671);
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  height: auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.contact-section form::Before {
+
+  content: "\2709";
+  background-color: rgb(244, 213, 166);
+  border-top: 2px solid rgba(245, 205, 145, 0.671);
+  border-radius: 50%;
+  font-size: 30px;
+  height: 50px;
+  left: 50%;
+  bottom: 5%;
+  position: relative;
+  margin-top: 1vh;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+
+.contact-section form input,
+.contact-section form textarea {
+  align-self: center;
+  margin: 2vh;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+
+
+/*Media Queries*/
+@media only screen and (min-width: 1300px) {
+  #menuTitle {
+    font-size: 400%;
+  }
+
+  .menu-item-description h1 {
+    font-size: 4rem;
+  }
+
+  .menu-item-wrapper p,
+  h3 {
+    font-size: 2rem;
+  }
+
+}
+
+
+@media (min-width: 43rem) {
+
+  #hero a {
+    font-size: 2rem;
+  }
+
+  #hero-content #restaurant-title {
+    font-size: 3.0rem;
+  }
+
+}
